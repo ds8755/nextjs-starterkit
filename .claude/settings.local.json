@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "WebFetch(domain:ui.shadcn.com)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Read(//c/Users/성준/Desktop/workspace/**)",
+      "Bash(rm -rf \"./claude-nextjs-starterkit/temp\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(pkill -f \"next dev\")"
+    ]
+  }
+}
