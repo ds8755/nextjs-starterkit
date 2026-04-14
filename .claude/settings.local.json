@@ -14,7 +14,23 @@
       "Bash(~/.claude/commands/security-check.sh:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Skill(update-config)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit:*)",
+            "command": "echo '{\"systemMessage\": \"✅ 커밋이 완료되었습니다!\"}'",
+            "statusMessage": "커밋 완료 알림"
+          }
+        ]
+      }
     ]
   }
 }
