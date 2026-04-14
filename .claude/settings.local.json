@@ -9,7 +9,12 @@
       "Read(//c/Users/성준/Desktop/workspace/**)",
       "Bash(rm -rf \"./claude-nextjs-starterkit/temp\")",
       "Bash(curl -s http://localhost:3000)",
-      "Bash(pkill -f \"next dev\")"
+      "Bash(pkill -f \"next dev\")",
+      "Bash(chmod +x:*)",
+      "Bash(~/.claude/commands/security-check.sh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
